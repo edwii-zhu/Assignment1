@@ -40,11 +40,13 @@ public class ListOfUnits {
             }
         }
         return -1;
+    }
     public boolean removeUnit(Unit unit){
         int index = indexOf(unit);
         if (index == -1) {
             return false;
-        } else {
+        }
+        else {
             for (int i = index; i < this.size - 1; i++) {
                 this.units[i] = this.units[i + 1];
             }
