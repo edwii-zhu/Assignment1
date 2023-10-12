@@ -20,6 +20,13 @@ public class ListOfUnits {
         return list;
     }
 
+    public Unit getUnit(int index) {
+        if (index < 0 || index >= this.size) {
+            throw new IndexOutOfBoundsException();
+        }
+        return this.units[index];
+    }
+
     public Unit addUnit(Unit unit) {
         if (this.size == this.units.length) {
             Unit[] newUnits = new Unit[this.units.length * 2];
@@ -41,12 +48,12 @@ public class ListOfUnits {
         }
         return -1;
     }
-    public boolean removeUnit(Unit unit){
+
+    public boolean removeUnit(Unit unit) {
         int index = indexOf(unit);
         if (index == -1) {
             return false;
-        }
-        else {
+        } else {
             for (int i = index; i < this.size - 1; i++) {
                 this.units[i] = this.units[i + 1];
             }
@@ -54,5 +61,22 @@ public class ListOfUnits {
             return true;
         }
     }
-}
 
+    public MilitaryUnit[] getArmy() {
+        int count = 0;
+        for (int i = 0; i < this.size; i++) {
+            if (this.units[i] instanceof MilitaryUnit) {
+                count++;
+            }
+        }
+        MilitaryUnit[] army = new MilitaryUnit[count];
+        int index = 0;
+        for (int i = 0; i < this.size; i++) {
+            if (this.units[i] instanceof MilitaryUnit) {
+                army[index] = (MilitaryUnit) this.units[i];
+                index++;
+            }
+        }
+        return army;
+    }
+}

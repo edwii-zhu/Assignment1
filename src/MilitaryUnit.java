@@ -1,4 +1,4 @@
-abstract class MilitaryUnit extends Unit{
+abstract public class MilitaryUnit extends Unit{
     private double damage;
     private int range;
     private int armor;
