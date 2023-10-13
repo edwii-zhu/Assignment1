@@ -27,7 +27,7 @@ public class ListOfUnits {
         return this.units[index];
     }
 
-    public Unit addUnit(Unit unit) {
+    public void addUnit(Unit unit) {
         if (this.size == this.units.length) {
             Unit[] newUnits = new Unit[this.units.length * 2];
             for (int i = 0; i < this.size; i++) {
@@ -37,7 +37,6 @@ public class ListOfUnits {
         }
         this.units[this.size] = unit;
         this.size++;
-        return unit;
     }
 
     public int indexOf(Unit unit) {
@@ -53,7 +52,8 @@ public class ListOfUnits {
         int index = indexOf(unit);
         if (index == -1) {
             return false;
-        } else {
+        }
+        else {
             for (int i = index; i < this.size - 1; i++) {
                 this.units[i] = this.units[i + 1];
             }
