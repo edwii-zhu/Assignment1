@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c8d8b-a34c-47b5-bafc-96838ae12d18" name="Changes" comment="revision 2">
+    <list default="true" id="0e3c8d8b-a34c-47b5-bafc-96838ae12d18" name="Changes" comment="revision 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListOfUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListOfUnits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +26,6 @@
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
-    "state": "OPEN",
-    "assignee": "edwii-zhu"
   }
 }]]></component>
   <component name="GithubPullRequestsUISettings">
@@ -94,7 +91,7 @@
       <workItem from="1695743936464" duration="5415000" />
       <workItem from="1696313826273" duration="35000" />
       <workItem from="1696313906448" duration="597000" />
-      <workItem from="1696873193117" duration="8056000" />
+      <workItem from="1696873193117" duration="12154000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -136,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697139383946</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="revision 3">
+      <option name="closed" value="true" />
+      <created>1697217434000</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697217434000</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +151,7 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="revision" />
     <MESSAGE value="revision 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="revision 2" />
+    <MESSAGE value="revision 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="revision 3" />
   </component>
 </project>

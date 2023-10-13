@@ -5,15 +5,17 @@ public class Main {
         ListOfUnits listOfUnits = new ListOfUnits();
         Settler settler = new Settler(new Tile(0, 0), 100, "Rome");
         Archer archer = new Archer(new Tile(0, 0), 100, "Rome");
+        Archer archer2 = new Archer(new Tile(0, 0), 100, "Rome");
         listOfUnits.addUnit(settler);
         listOfUnits.addUnit(archer);
+
         System.out.println(listOfUnits.getUnit(1));
         System.out.println(listOfUnits.getSize());
         System.out.println(listOfUnits.indexOf(settler));
+        listOfUnits.removeUnit(settler);
         for (Unit unit : listOfUnits.getList()) {
             System.out.println(unit);}
         for (MilitaryUnit militaryUnit : listOfUnits.getArmy()) {
             System.out.println(militaryUnit);}
         }
     }
-

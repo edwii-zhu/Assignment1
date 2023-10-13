@@ -58,11 +58,8 @@ public class Tile {
         return true;
 
     }
-    public boolean removeUnit(Unit unit){
-        if (unit == null) {
-            throw new IllegalArgumentException();
-        }
-        return this.units.removeUnit(unit);
+    public boolean removeUnit(Unit unit) {
+        return(this.units.removeUnit(unit));
     }
     public Unit selectWeakEnemy(String faction) {
         if (faction == null) {
@@ -78,7 +75,7 @@ public class Tile {
                 }
             }
         }
-        if (weakest == null) {
+        if (weakest == null){
             return null;
         }
         return weakest;
