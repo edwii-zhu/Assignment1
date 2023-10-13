@@ -27,10 +27,6 @@ public class Tile {
         return x;
     }
 
-    public ListOfUnits getUnits() {
-        return units;
-    }
-
     public int getY() {
         return y;
     }
@@ -45,14 +41,12 @@ public class Tile {
         if (unit == null) {
             throw new IllegalArgumentException();
         }
-        if (unit instanceof MilitaryUnit)
+        if (unit instanceof MilitaryUnit){
             for (Unit u : this.units.getList()) {
-                if (u.equals(unit)) {
-                    throw new IllegalArgumentException();
-                }
-                if (!u.getFaction().equals(unit.getFaction())) {
+                if (u instanceof MilitaryUnit && !u.getFaction().equals(unit.getFaction())){
                     return false;
                 }
+            }
         }
         this.units.addUnit(unit);
         return true;
@@ -75,9 +69,8 @@ public class Tile {
                 }
             }
         }
-        if (weakest == null){
-            return null;
-        }
+        // if (weakest == null){
+        //    return weakest;
         return weakest;
     }
     public static double getDistance(Tile tile1, Tile tile2) {
