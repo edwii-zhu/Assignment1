@@ -5,4 +5,12 @@ public class Archer extends MilitaryUnit{
         super(position, healthPoints, 2, faction, 15.0, 2, 0);
         this.arrows = 5;
     }
+    public void takeAction(Tile tile) {
+        if (arrows == 0) {
+            this.arrows = 5;
+            return;
+        }
+        super.takeAction(tile);
+        this.arrows--;
+    }
 }
