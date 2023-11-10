@@ -1,3 +1,5 @@
+package assignment1;
+
 public class ListOfUnits {
 
     private Unit[] units;
@@ -28,6 +30,9 @@ public class ListOfUnits {
     }
 
     public void addUnit(Unit unit) {
+        if (unit == null) {
+            return;
+        }
         if (this.size == this.units.length) {
             Unit[] newUnits = new Unit[this.units.length * 2];
             for (int i = 0; i < this.size; i++) {
@@ -40,6 +45,9 @@ public class ListOfUnits {
     }
 
     public int indexOf(Unit unit) {
+        if(unit == null){
+            return -1;
+        }
         for (int i = 0; i < this.size; i++) {
             if (this.units[i].equals(unit)) {
                 return i;
@@ -49,6 +57,9 @@ public class ListOfUnits {
     }
 
     public boolean removeUnit(Unit unit) {
+        if (unit == null) {
+            return false;
+        }
         int index = indexOf(unit);
         if (index == -1) {
             return false;

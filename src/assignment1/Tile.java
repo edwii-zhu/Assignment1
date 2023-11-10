@@ -1,9 +1,11 @@
+package assignment1;
+
 public class Tile {
-    /*Write a class Tile. You can think of a Tile as a square on the board on which the game will be played. A Tile must have the following private fields:
+    /*Write a class assignment1.Tile. You can think of a assignment1.Tile as a square on the board on which the game will be played. A assignment1.Tile must have the following private fields:
 – An int indicating the x-coordinate of the tile.
 – An int indicating the y-coordinate of the tile.
 – A boolean indicating whether or not a city has been built on the tile.
-– A boolean indicating whether or not the tile received some “improvements”. – A ListOfUnits containing all the units positioned on the tile.
+– A boolean indicating whether or not the tile received some “improvements”. – A assignment1.ListOfUnits containing all the units positioned on the tile.
      */
     private int x;
     private int y;
@@ -74,9 +76,9 @@ public class Tile {
         return weakest;
     }
     public static double getDistance(Tile tile1, Tile tile2) {
-        if (tile1 == null || tile2 == null) {
-            throw new IllegalArgumentException();
-        }
+        // if (tile1 == null || tile2 == null) {
+        //    return -1;
+        //}
         return Math.sqrt(Math.pow(tile1.getX() - tile2.getX(), 2) + Math.pow(tile1.getY() - tile2.getY(), 2));
     }
 }
